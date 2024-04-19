@@ -6,5 +6,5 @@ class SoleoDetails(models.Model):
     age = models.IntegerField()
     status = models.CharField(max_length=30)
     address = models.CharField(max_length=500)
-    # card = models.ImageField(upload_to='card/', blank=True)
+    card = models.ImageField(upload_to='card/', blank=True)
     
