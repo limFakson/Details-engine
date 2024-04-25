@@ -2,7 +2,8 @@ from rest_framework import serializers
 
 from .models import SoleoDetails
 
+
 class SoleoSerializer(serializers.ModelSerializer):
     class Meta:
         model = SoleoDetails
-        fields = '__all__'
+        fields = "__all__"
