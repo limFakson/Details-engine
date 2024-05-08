@@ -46,5 +46,5 @@ def soleo_details(request, pk):
         return Response(serializer.data, status=201)
     elif request.method == 'DELETE':
         detail.delete()
-        return Response(status=status.HTTP_204_DELETED_SUCCESSFULLY)
+        return Response(status=201)
     

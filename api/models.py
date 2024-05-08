@@ -1,12 +1,7 @@
 from django.db import models
+from django.db.models import JSONField
 
 
 # Create your models here.
 class SoleoDetails(models.Model):
-    name = models.CharField(max_length=300)
-    age = models.IntegerField()
-    status = models.CharField(max_length=30)
-    loaction = models.CharField(max_length=400)
-    address = models.CharField(max_length=500)
-    id_card = models.ImageField(upload_to="card/", blank=True, null=True)
-    ssn_card = models.ImageField(upload_to="sncard/", blank=True, null=True)
+    data = JSONField()
